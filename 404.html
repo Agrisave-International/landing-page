@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - AGRISAVE</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--off-white) 0%, #E8F5E0 100%);
+        }
+        .error-content {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--secondary-green);
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+        .error-message {
+            font-size: 1.5rem;
+            color: var(--charcoal);
+            margin-bottom: 2rem;
+        }
+        .error-description {
+            color: var(--gray-medium);
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-message">Page Not Found</h1>
+            <p class="error-description">
+                Looks like this field hasn't been planted yet. Let's get you back to familiar ground.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="/" class="btn btn-primary">Go Home</a>
+                <a href="/#features" class="btn btn-secondary">View Features</a>
+                <a href="mailto:hello@agrisave.com" class="btn btn-secondary">Contact Support</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

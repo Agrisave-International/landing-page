@@ -1,0 +1,31 @@
+{
+  "name": "agrisave-landing-page",
+  "version": "1.0.0",
+  "description": "AGRISAVE - Blockchain-powered agricultural fintech platform landing page",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "npm run minify:css && npm run minify:js",
+    "minify:css": "cleancss -o dist/styles.min.css styles.css",
+    "minify:js": "terser script.js -o dist/script.min.js",
+    "optimize:images": "node scripts/optimize-images.js",
+    "lighthouse": "lighthouse http://localhost:8000 --view",
+    "test:accessibility": "pa11y http://localhost:8000"
+  },
+  "keywords": [
+    "agriculture",
+    "fintech",
+    "blockchain",
+    "payments",
+    "farmers",
+    "USDC",
+    "stablecoin"
+  ],
+  "author": "AGRISAVE INTERNATIONAL, INC.",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "terser": "^5.24.0",
+    "lighthouse": "^11.4.0",
+    "pa11y": "^7.0.0"
+  }
+}
