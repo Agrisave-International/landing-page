@@ -1,0 +1,12 @@
+# Redirect www to non-www (update with your actual domain)
+# https://www.agrisave.com/* https://agrisave.com/:splat 301!
+
+# Redirect section links to homepage with anchors
+/features /#features 200
+/pricing /#pricing 200
+/how-it-works /#how-it-works 200
+/testimonials /#testimonials 200
+/faq /#faq 200
+
+# 404 page
+/* /404.html 404

@@ -1,0 +1,23 @@
+# Cloudflare Pages Configuration
+# This file is optional for static sites but included to avoid warnings
+
+name = "agrisave"
+compatibility_date = "2024-11-17"
+
+# Pages configuration
+[site]
+bucket = "./"
+
+# Build configuration (not needed for static sites)
+[build]
+command = ""
+cwd = "./"
+watch_dirs = []
+
+# Environment variables (if needed)
+[vars]
+# Add any environment variables here if needed
+
+# Note: For static sites deployed via GitHub,
+# you don't need this file. Cloudflare Pages
+# will automatically detect and deploy your site.
